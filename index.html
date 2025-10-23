@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LogoFácil - Crie Seu Logo Profissional</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>🎨 LogoFácil</h1>
+            <p>Crie logos profissionais em segundos - Grátis!</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- Editor de Logo -->
+        <section class="editor-section">
+            <h2>Crie Seu Logo</h2>
+            
+            <div class="editor-container">
+                <div class="controls">
+                    <div class="input-group">
+                        <label for="textoLogo">Texto do Logo:</label>
+                        <input type="text" id="textoLogo" placeholder="Sua Marca" value="MINHA MARCA" maxlength="20">
+                    </div>
+                    
+                    <div class="input-group">
+                        <label for="corLogo">Cor do Logo:</label>
+                        <input type="color" id="corLogo" value="#2D5BFF">
+                    </div>
+                    
+                    <div class="input-group">
+                        <label for="fonteLogo">Fonte:</label>
+                        <select id="fonteLogo">
+                            <option value="Arial, sans-serif">Arial</option>
+                            <option value="'Helvetica Neue', Helvetica, sans-serif">Helvetica</option>
+                            <option value="'Segoe UI', Tahoma, Geneva, Verdana, sans-serif">Segoe UI</option>
+                            <option value="'Times New Roman', Times, serif">Times New Roman</option>
+                            <option value="'Courier New', Courier, monospace">Courier New</option>
+                        </select>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="estiloLogo">Estilo:</label>
+                        <select id="estiloLogo">
+                            <option value="simples">Simples</option>
+                            <option value="moderno">Moderno</option>
+                            <option value="elegante">Elegante</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="preview-container">
+                    <div class="canvas-wrapper">
+                        <canvas id="logoCanvas" width="400" height="200"></canvas>
+                    </div>
+                    
+                    <div class="actions">
+                        <button id="btnDownload" class="btn-primary">📥 Download Grátis</button>
+                        <button id="btnPremium" class="btn-secondary">💎 Versão Premium (R$ 15)</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Serviços Profissionais -->
+        <section class="services-section">
+            <h2>🎯 Serviços Profissionais</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>🎨 Logo Básico</h3>
+                    <p class="price">R$ 40</p>
+                    <ul>
+                        <li>1 conceito original</li>
+                        <li>2 revisões</li>
+                        <li>Arquivos PNG/JPG</li>
+                        <li>Entrega em 24h</li>
+                    </ul>
+                    <button class="btn-whatsapp" onclick="abrirWhatsApp('Logo Básico - R$40')">💬 Pedir pelo WhatsApp</button>
+                </div>
+
+                <div class="service-card featured">
+                    <h3>⭐ Logo Premium</h3>
+                    <p class="price">R$ 80</p>
+                    <ul>
+                        <li>3 conceitos diferentes</li>
+                        <li>Revisões ilimitadas</li>
+                        <li>Arquivos vetoriais (AI/EPS)</li>
+                        <li>Suporte por 7 dias</li>
+                    </ul>
+                    <button class="btn-whatsapp" onclick="abrirWhatsApp('Logo Premium - R$80')">💬 Pedir pelo WhatsApp</button>
+                </div>
+
+                <div class="service-card">
+                    <h3>📱 Identidade Visual</h3>
+                    <p class="price">R$ 150</p>
+                    <ul>
+                        <li>Logo + cartão visita</li>
+                        <li>Arte para redes sociais</li>
+                        <li>Manual de aplicação</li>
+                        <li>5 arquivos editáveis</li>
+                    </ul>
+                    <button class="btn-whatsapp" onclick="abrirWhatsApp('Identidade Visual - R$150')">💬 Pedir pelo WhatsApp</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfólio -->
+        <section class="portfolio-section">
+            <h2>📂 Nossos Trabalhos</h2>
+            <div class="portfolio-grid">
+                <div class="portfolio-item"><div class="logo-example" style="background: #2D5BFF; color: white;">Tech<span>Solutions</span></div></div>
+                <div class="portfolio-item"><div class="logo-example" style="background: #FF6B35; color: white;">Bella<span>Moda</span></div></div>
+                <div class="portfolio-item"><div class="logo-example" style="background: #00C897; color: white;">Eco<span>Verde</span></div></div>
+                <div class="portfolio-item"><div class="logo-example" style="background: #8B5FBF; color: white;">Creative<span>Mind</span></div></div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>💡 <strong>Dica do Expert:</strong> Use nosso gerador grátis para testar ideias, ou peça um serviço profissional para resultados perfeitos!</p>
+            <div class="contact-info">
+                <p>📧 Contato: <span id="emailContato">gs1477939@gmail.com</span></p>
+                <p>📱 WhatsApp: <span id="whatsappNumero">(55) 7598708-1502</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+  </html>
